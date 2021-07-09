@@ -11,7 +11,10 @@ const moduleRaid = function () {
   moduleRaid.mObj = {};
 
   fillModuleArray = function() {
-    (webpackChunkbuild || webpackChunkwhatsapp_web_client).push([
+    // update : fix bug whatsapp-web 
+    // https://github.com/pedroslopez/whatsapp-web.js/issues/733
+    // remove webpackChunkbuild 
+    (webpackChunkwhatsapp_web_client).push([
       [moduleRaid.mID], {}, function(e) {
         Object.keys(e.m).forEach(function(mod) {
           moduleRaid.mObj[mod] = e(mod);
