@@ -4,7 +4,7 @@
   "description": "Get modules from webpack v5",
   "main": "moduleraid.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests"
   },
   "types": "./moduleraid.d.ts",
   "repository": {
@@ -25,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/pixeldesu/moduleRaid/issues"
   },
-  "homepage": "https://github.com/@pedroslopez/moduleRaid#readme"
+  "homepage": "https://github.com/@pedroslopez/moduleRaid#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.2",
+    "puppeteer": "^10.1.0"
+  }
 }
